@@ -1,1781 +1,1109 @@
 @section('sidebar')
-    <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark ">
-        <!-- BEGIN: Aside Menu -->
-        <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
-            <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
-                <li class="m-menu__item  m-menu__item--active" aria-haspopup="true">
-                    <a href="index.html" class="m-menu__link ">
-                        <i class="m-menu__link-icon flaticon-line-graph"></i>
-                        <span class="m-menu__link-title">
-										<span class="m-menu__link-wrap">
-											<span class="m-menu__link-text">
-												Dashboard
-											</span>
-											<span class="m-menu__link-badge">
-												<span class="m-badge m-badge--danger">
-													2
-												</span>
-											</span>
-										</span>
-									</span>
-                    </a>
-                </li>
-                <li class="m-menu__section">
-                    <h4 class="m-menu__section-text">
-                        Components
-                    </h4>
-                    <i class="m-menu__section-icon flaticon-more-v3"></i>
-                </li>
-                <li class="m-menu__item m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-layers"></i>
-                        <span class="m-menu__link-text">
-										Base
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu" style="">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Base
-												</span>
+<div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <li class="sidebar-toggler-wrapper hide">
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <div class="sidebar-toggler"> </div>
+                            <!-- END SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                        <li class="sidebar-search-wrapper">
+                            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                            <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+                            <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+                            <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
+                                <a href="javascript:;" class="remove">
+                                    <i class="icon-close"></i>
                                 </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/state.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													State Colors
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/typography.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Typography
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/stack.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Stack
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/tables.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Tables
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/progress.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Progress
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/modal.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Modal
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/alerts.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Alerts
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/popover.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Popover
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/tooltip.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Tooltip
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/blockui.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Block UI
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/spinners.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Spinners
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/scrollable.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Scrollable
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/dropdown.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Dropdown
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Tabs
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/base/tabs/bootstrap.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Bootstrap Tabs
-															</span>
-                                            </a>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn submit">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                        </li>
+                        <li class="nav-item start active open">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="selected"></span>
+                                <span class="arrow open"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start active open">
+                                    <a href="index.html" class="nav-link ">
+                                        <i class="icon-bar-chart"></i>
+                                        <span class="title">Dashboard 1</span>
+                                        <span class="selected"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_2.html" class="nav-link ">
+                                        <i class="icon-bulb"></i>
+                                        <span class="title">Dashboard 2</span>
+                                        <span class="badge badge-success">1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_3.html" class="nav-link ">
+                                        <i class="icon-graph"></i>
+                                        <span class="title">Dashboard 3</span>
+                                        <span class="badge badge-danger">5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">Features</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-diamond"></i>
+                                <span class="title">UI Features</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">Color Library</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">General Components</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons.html" class="nav-link ">
+                                        <span class="title">Buttons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_confirmations.html" class="nav-link ">
+                                        <span class="title">Popover Confirmations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_icons.html" class="nav-link ">
+                                        <span class="title">Font Icons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_socicons.html" class="nav-link ">
+                                        <span class="title">Social Icons</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_typography.html" class="nav-link ">
+                                        <span class="title">Typography</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_tabs_accordions_navs.html" class="nav-link ">
+                                        <span class="title">Tabs, Accordions & Navs</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_timeline.html" class="nav-link ">
+                                        <span class="title">Timeline</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_tree.html" class="nav-link ">
+                                        <span class="title">Tree View</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <span class="title">Page Progress Bar</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/base/tabs/line.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Line Tabs
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="ui_page_progress_style_2.html" class="nav-link "> Big Counter </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/navs.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Navs
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/lists.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Lists
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/treeview.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Tree View
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/bootstrap-notify.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Bootstrap Notify
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/base/toastr.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Toastr
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-share"></i>
-                        <span class="m-menu__link-text">
-										Icons
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu" style="">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/icons/flaticon.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Flaticon
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/icons/fontawesome.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Fontawesome
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/icons/lineawesome.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Lineawesome
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/icons/socicons.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Socicons
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-multimedia-1"></i>
-                        <span class="m-menu__link-text">
-										Buttons
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu" style="">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Buttons
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Button Base
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/base/default.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Default Style
-															</span>
-                                            </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_blockui.html" class="nav-link ">
+                                        <span class="title">Block UI</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_bootstrap_growl.html" class="nav-link ">
+                                        <span class="title">Bootstrap Growl Notifications</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_notific8.html" class="nav-link ">
+                                        <span class="title">Notific8 Notifications</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_toastr.html" class="nav-link ">
+                                        <span class="title">Toastr Notifications</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_bootbox.html" class="nav-link ">
+                                        <span class="title">Bootbox Dialogs</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_alerts_api.html" class="nav-link ">
+                                        <span class="title">Metronic Alerts API</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_session_timeout.html" class="nav-link ">
+                                        <span class="title">Session Timeout</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_idle_timeout.html" class="nav-link ">
+                                        <span class="title">User Idle Timeout</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_modals.html" class="nav-link ">
+                                        <span class="title">Modals</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_extended_modals.html" class="nav-link ">
+                                        <span class="title">Extended Modals</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_tiles.html" class="nav-link ">
+                                        <span class="title">Tiles</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_datepaginator.html" class="nav-link ">
+                                        <span class="title">Date Paginator</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_nestable.html" class="nav-link ">
+                                        <span class="title">Nestable List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-puzzle"></i>
+                                <span class="title">Components</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="components_date_time_pickers.html" class="nav-link ">
+                                        <span class="title">Date & Time Pickers</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_color_pickers.html" class="nav-link ">
+                                        <span class="title">Color Pickers</span>
+                                        <span class="badge badge-danger">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_select2.html" class="nav-link ">
+                                        <span class="title">Select2 Dropdowns</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select.html" class="nav-link ">
+                                        <span class="title">Bootstrap Select</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_multi_select.html" class="nav-link ">
+                                        <span class="title">Multi Select</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_select_splitter.html" class="nav-link ">
+                                        <span class="title">Select Splitter</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_typeahead.html" class="nav-link ">
+                                        <span class="title">Typeahead Autocomplete</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_tagsinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap Tagsinput</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_switch.html" class="nav-link ">
+                                        <span class="title">Bootstrap Switch</span>
+                                        <span class="badge badge-success">6</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_maxlength.html" class="nav-link ">
+                                        <span class="title">Bootstrap Maxlength</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_fileinput.html" class="nav-link ">
+                                        <span class="title">Bootstrap File Input</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_bootstrap_touchspin.html" class="nav-link ">
+                                        <span class="title">Bootstrap Touchspin</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_form_tools.html" class="nav-link ">
+                                        <span class="title">Form Widgets & Tools</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_context_menu.html" class="nav-link ">
+                                        <span class="title">Context Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_editors.html" class="nav-link ">
+                                        <span class="title">Markdown & WYSIWYG Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_code_editors.html" class="nav-link ">
+                                        <span class="title">Code Editors</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_ion_sliders.html" class="nav-link ">
+                                        <span class="title">Ion Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_noui_sliders.html" class="nav-link ">
+                                        <span class="title">NoUI Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="components_knob_dials.html" class="nav-link ">
+                                        <span class="title">Knob Circle Dials</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">Form Stuff</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="form_controls.html" class="nav-link ">
+                                        <span class="title">Bootstrap Form
+                                            <br>Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_controls_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation.html" class="nav-link ">
+                                        <span class="title">Form Validation</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation_states_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Validation States</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_validation_md.html" class="nav-link ">
+                                        <span class="title">Material Design
+                                            <br>Form Validation</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_layouts.html" class="nav-link ">
+                                        <span class="title">Form Layouts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_input_mask.html" class="nav-link ">
+                                        <span class="title">Form Input Mask</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_editable.html" class="nav-link ">
+                                        <span class="title">Form X-editable</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_wizard.html" class="nav-link ">
+                                        <span class="title">Form Wizard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_icheck.html" class="nav-link ">
+                                        <span class="title">iCheck Controls</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_image_crop.html" class="nav-link ">
+                                        <span class="title">Image Cropping</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_fileupload.html" class="nav-link ">
+                                        <span class="title">Multiple File Upload</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="form_dropzone.html" class="nav-link ">
+                                        <span class="title">Dropzone File Upload</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-bulb"></i>
+                                <span class="title">Elements</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="elements_steps.html" class="nav-link ">
+                                        <span class="title">Steps</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_lists.html" class="nav-link ">
+                                        <span class="title">Lists</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="elements_ribbons.html" class="nav-link ">
+                                        <span class="title">Ribbons</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">Tables</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <span class="title">Static Tables</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="table_static_basic.html" class="nav-link "> Basic Tables </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/base/square.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Square Style
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/base/pill.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Pill Style
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/base/air.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Air Style
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/buttons/group.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Button Group
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/buttons/dropdown.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Button Dropdown
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Button Icon
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/icon/lineawesome.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Lineawesome Icons
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/icon/fontawesome.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Fontawesome Icons
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/buttons/icon/flaticon.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Flaticon Icons
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-interface-7"></i>
-                        <span class="m-menu__link-text">
-										Forms
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Forms
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Form Controls
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/controls/base.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Base Inputs
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/controls/checkbox-radio.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Checkbox &amp; Radio
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/controls/switch.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Switch
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/controls/input-group.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Input Groups
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_static_responsive.html" class="nav-link "> Responsive Tables </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Form Widgets
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-datepicker.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Datepicker
-															</span>
-                                            </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <span class="title">Datatables</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_managed.html" class="nav-link "> Managed Datatables </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-datetimepicker.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Datetimepicker
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_buttons.html" class="nav-link "> Buttons Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-timepicker.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Timepicker
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_colreorder.html" class="nav-link "> Colreorder Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-daterangepicker.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Daterangepicker
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_rowreorder.html" class="nav-link "> Rowreorder Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-touchspin.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Touchspin
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_scroller.html" class="nav-link "> Scroller Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-maxlength.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Maxlength
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_fixedheader.html" class="nav-link "> FixedHeader Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-switch.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Switch
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_responsive.html" class="nav-link "> Responsive Extension </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-multipleselectsplitter.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Multiple Select Splitter
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_editable.html" class="nav-link "> Editable Datatables </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-select.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Bootstrap Select
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/select2.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Select2
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/typeahead.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Typeahead
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/nouislider.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																noUiSlider
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/form-repeater.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Form Repeater
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/ion-range-slider.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Ion Range Slider
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/input-mask.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Input Masks
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/summernote.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Summernote WYSIWYG
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/bootstrap-markdown.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Markdown Editor
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/autosize.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Autosize
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/clipboard.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Clipboard
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/dropzone.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Dropzone
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/widgets/recaptcha.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Google reCaptcha
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="table_datatables_ajax.html" class="nav-link "> Ajax Datatables </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Form Layouts
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/layouts/default-forms.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Default Forms
-															</span>
-                                            </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="?p=" class="nav-link nav-toggle">
+                                <i class="icon-wallet"></i>
+                                <span class="title">Portlets</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="portlet_boxed.html" class="nav-link ">
+                                        <span class="title">Boxed Portlets</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="portlet_light.html" class="nav-link ">
+                                        <span class="title">Light Portlets</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="portlet_solid.html" class="nav-link ">
+                                        <span class="title">Solid Portlets</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="portlet_ajax.html" class="nav-link ">
+                                        <span class="title">Ajax Portlets</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="portlet_draggable.html" class="nav-link ">
+                                        <span class="title">Draggable Portlets</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title">Charts</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="charts_amcharts.html" class="nav-link ">
+                                        <span class="title">amChart</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="charts_flotcharts.html" class="nav-link ">
+                                        <span class="title">Flot Charts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="charts_flowchart.html" class="nav-link ">
+                                        <span class="title">Flow Charts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="charts_google.html" class="nav-link ">
+                                        <span class="title">Google Charts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="charts_echarts.html" class="nav-link ">
+                                        <span class="title">eCharts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="charts_morris.html" class="nav-link ">
+                                        <span class="title">Morris Charts</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <span class="title">HighCharts</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="charts_highcharts.html" class="nav-link "> HighCharts </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/layouts/multi-column-forms.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Multi Column Forms
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="charts_highstock.html" class="nav-link "> HighStock </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/layouts/action-bars.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Action Bars
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Form Validation
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/validation/states.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Validation States
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/validation/form-controls.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Form Controls
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/forms/validation/form-widgets.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Form Widgets
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="charts_highmaps.html" class="nav-link "> HighMaps </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-tabs"></i>
-                        <span class="m-menu__link-text">
-										Datatables
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Datatables
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Base
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/data-local.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Local Data
-															</span>
-                                            </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-pointer"></i>
+                                <span class="title">Maps</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="maps_google.html" class="nav-link ">
+                                        <span class="title">Google Maps</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="maps_vector.html" class="nav-link ">
+                                        <span class="title">Vector Maps</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">Layouts</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-layers"></i>
+                                <span class="title">Page Layouts</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="layout_classic_page_head.html" class="nav-link ">
+                                        <span class="title">Classic Page Head</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_light_page_head.html" class="nav-link ">
+                                        <span class="title">Light Page Head</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_content_grey.html" class="nav-link ">
+                                        <span class="title">Grey Bg Content</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_search_on_header_1.html" class="nav-link ">
+                                        <span class="title">Search Box On Header 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_search_on_header_2.html" class="nav-link ">
+                                        <span class="title">Search Box On Header 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_language_bar.html" class="nav-link ">
+                                        <span class="title">Header Language Bar</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_footer_fixed.html" class="nav-link ">
+                                        <span class="title">Fixed Footer</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_boxed_page.html" class="nav-link ">
+                                        <span class="title">Boxed Page</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_blank_page.html" class="nav-link ">
+                                        <span class="title">Blank Page</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-feed"></i>
+                                <span class="title">Sidebar Layouts</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_menu_light.html" class="nav-link ">
+                                        <span class="title">Light Sidebar Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_menu_hover.html" class="nav-link ">
+                                        <span class="title">Hover Sidebar Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_search_1.html" class="nav-link ">
+                                        <span class="title">Sidebar Search Option 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_search_2.html" class="nav-link ">
+                                        <span class="title">Sidebar Search Option 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_toggler_on_sidebar.html" class="nav-link ">
+                                        <span class="title">Sidebar Toggler On Sidebar</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_reversed.html" class="nav-link ">
+                                        <span class="title">Reversed Sidebar Page</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_fixed.html" class="nav-link ">
+                                        <span class="title">Fixed Sidebar Layout</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_sidebar_closed.html" class="nav-link ">
+                                        <span class="title">Closed Sidebar Layout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-paper-plane"></i>
+                                <span class="title">Horizontal Menu</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="layout_mega_menu_light.html" class="nav-link ">
+                                        <span class="title">Light Mega Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_mega_menu_dark.html" class="nav-link ">
+                                        <span class="title">Dark Mega Menu</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_full_width.html" class="nav-link ">
+                                        <span class="title">Full Width Layout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class=" icon-wrench"></i>
+                                <span class="title">Custom Layouts</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="layout_disabled_menu.html" class="nav-link ">
+                                        <span class="title">Disabled Menu Links</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_full_height_portlet.html" class="nav-link ">
+                                        <span class="title">Full Height Portlet</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="layout_full_height_content.html" class="nav-link ">
+                                        <span class="title">Full Height Content</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">Pages</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-basket"></i>
+                                <span class="title">eCommerce</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ecommerce_index.html" class="nav-link ">
+                                        <i class="icon-home"></i>
+                                        <span class="title">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ecommerce_orders.html" class="nav-link ">
+                                        <i class="icon-basket"></i>
+                                        <span class="title">Orders</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ecommerce_orders_view.html" class="nav-link ">
+                                        <i class="icon-tag"></i>
+                                        <span class="title">Order View</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ecommerce_products.html" class="nav-link ">
+                                        <i class="icon-graph"></i>
+                                        <span class="title">Products</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ecommerce_products_edit.html" class="nav-link ">
+                                        <i class="icon-graph"></i>
+                                        <span class="title">Product Edit</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-docs"></i>
+                                <span class="title">Apps</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="app_todo.html" class="nav-link ">
+                                        <i class="icon-clock"></i>
+                                        <span class="title">Todo 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="app_todo_2.html" class="nav-link ">
+                                        <i class="icon-check"></i>
+                                        <span class="title">Todo 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="app_inbox.html" class="nav-link ">
+                                        <i class="icon-envelope"></i>
+                                        <span class="title">Inbox</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="app_calendar.html" class="nav-link ">
+                                        <i class="icon-calendar"></i>
+                                        <span class="title">Calendar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-user"></i>
+                                <span class="title">User</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="page_user_profile_1.html" class="nav-link ">
+                                        <i class="icon-user"></i>
+                                        <span class="title">Profile 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_user_profile_1_account.html" class="nav-link ">
+                                        <i class="icon-user-female"></i>
+                                        <span class="title">Profile 1 Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_user_profile_1_help.html" class="nav-link ">
+                                        <i class="icon-user-following"></i>
+                                        <span class="title">Profile 1 Help</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_user_profile_2.html" class="nav-link ">
+                                        <i class="icon-users"></i>
+                                        <span class="title">Profile 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="icon-notebook"></i>
+                                        <span class="title">Login</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_1.html" class="nav-link " target="_blank"> Login Page 1 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/data-json.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																JSON Data
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_2.html" class="nav-link " target="_blank"> Login Page 2 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/data-ajax.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Ajax Data
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_3.html" class="nav-link " target="_blank"> Login Page 3 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/html-table.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																HTML Table
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_4.html" class="nav-link " target="_blank"> Login Page 4 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/record-selection.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Record Selection
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_5.html" class="nav-link " target="_blank"> Login Page 5 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/local-sort.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Local Sort
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/column-rendering.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Column Rendering
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/column-width.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Column Width
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/responsive-columns.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Responsive Columns
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/base/translation.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Translation
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Scrolling
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/scrolling/vertical.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Vertical Scrolling
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/scrolling/horizontal.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Horizontal Scrolling
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/scrolling/both.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Both Scrolling
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Locked Columns
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/locked/left.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Left Locked Columns
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/locked/right.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Right Locked Columns
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/locked/both.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Both Locked Columns
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/locked/html-table.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																HTML Table
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Child Datatables
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/child/data-local.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Local Data
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/child/data-ajax.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Remote Data
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													API
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/api/methods.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																API Methods
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/datatables/api/events.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Events
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_user_login_6.html" class="nav-link " target="_blank"> Login Page 6 </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-interface-1"></i>
-                        <span class="m-menu__link-text">
-										Portlets
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/base.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Base Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/advanced.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Advanced Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/creative.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Creative Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/tabbed.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Tabbed Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/draggable.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Draggable Portlets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/portlets/tools.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Portlet Tools
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-network"></i>
-                        <span class="m-menu__link-text">
-										Widgets
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Widgets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/widgets/general.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													General Widgets
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/widgets/chart.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Chart Widgets
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-calendar"></i>
-                        <span class="m-menu__link-text">
-										Calendar
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Calendar
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/calendar/basic.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Basic Calendar
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/calendar/list-view.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													List Views
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/calendar/google.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Google Calendar
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/calendar/external-events.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													External Events
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/calendar/background-events.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Background Events
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-diagram"></i>
-                        <span class="m-menu__link-text">
-										Charts
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Charts
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													amCharts
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/charts/amcharts/charts.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																amCharts Charts
-															</span>
-                                            </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_user_lock_1.html" class="nav-link " target="_blank">
+                                        <i class="icon-lock"></i>
+                                        <span class="title">Lock Screen 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_user_lock_2.html" class="nav-link " target="_blank">
+                                        <i class="icon-lock-open"></i>
+                                        <span class="title">Lock Screen 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-social-dribbble"></i>
+                                <span class="title">General</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="page_general_about.html" class="nav-link ">
+                                        <i class="icon-info"></i>
+                                        <span class="title">About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_contact.html" class="nav-link ">
+                                        <i class="icon-call-end"></i>
+                                        <span class="title">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="icon-notebook"></i>
+                                        <span class="title">Portfolio</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="page_general_portfolio_1.html" class="nav-link "> Portfolio 1 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/charts/amcharts/stock-charts.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																amCharts Stock Charts
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_general_portfolio_2.html" class="nav-link "> Portfolio 2 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="components/charts/amcharts/maps.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																amCharts Maps
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_general_portfolio_3.html" class="nav-link "> Portfolio 3 </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="page_general_portfolio_4.html" class="nav-link "> Portfolio 4 </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/charts/flotcharts.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Flot Charts
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/charts/google-charts.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Google Charts
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/charts/morris-charts.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Morris Charts
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-placeholder-1"></i>
-                        <span class="m-menu__link-text">
-										Maps
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Maps
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/maps/google-maps.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Google Maps
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/maps/jqvmap.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													JQVMap
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-signs-2"></i>
-                        <span class="m-menu__link-text">
-										Utils
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Utils
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/utils/session-timeout.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Session Timeout
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item " aria-haspopup="true">
-                                <a href="components/utils/idle-timer.html" class="m-menu__link ">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Idle Timer
-												</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__section">
-                    <h4 class="m-menu__section-text">
-                        Snippets
-                    </h4>
-                    <i class="m-menu__section-icon flaticon-more-v3"></i>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-interface-3"></i>
-                        <span class="m-menu__link-text">
-										General
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													General
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Pricing Tables
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="snippets/general/pricing-tables/pricing-table-1.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Pricing Tables v1
-															</span>
-                                            </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="icon-magnifier"></i>
+                                        <span class="title">Search</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="page_general_search.html" class="nav-link "> Search 1 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="snippets/general/pricing-tables/pricing-table-2.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Pricing Tables v2
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_general_search_2.html" class="nav-link "> Search 2 </a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a href="snippets/general/pricing-tables/pricing-table-3.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Pricing Tables v3
-															</span>
-                                            </a>
+                                        <li class="nav-item ">
+                                            <a href="page_general_search_3.html" class="nav-link "> Search 3 </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="page_general_search_4.html" class="nav-link "> Search 4 </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="page_general_search_5.html" class="nav-link "> Search 5 </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                    <a href="#" class="m-menu__link m-menu__toggle">
-                        <i class="m-menu__link-icon flaticon-suitcase"></i>
-                        <span class="m-menu__link-text">
-										Custom Pages
-									</span>
-                        <i class="m-menu__ver-arrow la la-angle-right"></i>
-                    </a>
-                    <div class="m-menu__submenu">
-                        <span class="m-menu__arrow"></span>
-                        <ul class="m-menu__subnav">
-                            <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
-                                <a href="#" class="m-menu__link ">
-												<span class="m-menu__link-text">
-													Custom Pages
-												</span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													User Pages
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/user/login-1.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Login - 1
-															</span>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_pricing.html" class="nav-link ">
+                                        <i class="icon-tag"></i>
+                                        <span class="title">Pricing</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_faq.html" class="nav-link ">
+                                        <i class="icon-wrench"></i>
+                                        <span class="title">FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_blog.html" class="nav-link ">
+                                        <i class="icon-pencil"></i>
+                                        <span class="title">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_blog_post.html" class="nav-link ">
+                                        <i class="icon-note"></i>
+                                        <span class="title">Blog Post</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_invoice.html" class="nav-link ">
+                                        <i class="icon-envelope"></i>
+                                        <span class="title">Invoice</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_general_invoice_2.html" class="nav-link ">
+                                        <i class="icon-envelope"></i>
+                                        <span class="title">Invoice 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">System</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="page_system_coming_soon.html" class="nav-link " target="_blank">
+                                        <span class="title">Coming Soon</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_system_404_1.html" class="nav-link ">
+                                        <span class="title">404 Page 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_system_404_2.html" class="nav-link " target="_blank">
+                                        <span class="title">404 Page 2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_system_404_3.html" class="nav-link " target="_blank">
+                                        <span class="title">404 Page 3</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_system_500_1.html" class="nav-link ">
+                                        <span class="title">500 Page 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="page_system_500_2.html" class="nav-link " target="_blank">
+                                        <span class="title">500 Page 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-folder"></i>
+                                <span class="title">Multi Level Menu</span>
+                                <span class="arrow "></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="icon-settings"></i> Item 1
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item">
+                                            <a href="javascript:;" target="_blank" class="nav-link">
+                                                <i class="icon-user"></i> Arrow Toggle
+                                                <span class="arrow nav-toggle"></span>
                                             </a>
+                                            <ul class="sub-menu">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <i class="icon-power"></i> Sample Link 1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <i class="icon-paper-plane"></i> Sample Link 1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link">
+                                                        <i class="icon-star"></i> Sample Link 1</a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/user/login-2.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Login - 2
-															</span>
-                                            </a>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-camera"></i> Sample Link 1</a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/user/login-3.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Login - 3
-															</span>
-                                            </a>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-link"></i> Sample Link 2</a>
                                         </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/user/login-4.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Login - 4
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/user/login-5.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Login - 5
-															</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" data-menu-submenu-toggle="hover">
-                                <a href="#" class="m-menu__link m-menu__toggle">
-                                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                        <span></span>
-                                    </i>
-                                    <span class="m-menu__link-text">
-													Error Pages
-												</span>
-                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
-                                </a>
-                                <div class="m-menu__submenu">
-                                    <span class="m-menu__arrow"></span>
-                                    <ul class="m-menu__subnav">
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-1.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 1
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-2.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 2
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-3.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 3
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-4.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 4
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-5.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 5
-															</span>
-                                            </a>
-                                        </li>
-                                        <li class="m-menu__item " aria-haspopup="true">
-                                            <a target="_blank" href="snippets/pages/errors/error-6.html" class="m-menu__link ">
-                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
-                                                    <span></span>
-                                                </i>
-                                                <span class="m-menu__link-text">
-																Error 6
-															</span>
-                                            </a>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-pointer"></i> Sample Link 3</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- END: Aside Menu -->
-    </div>
-    @endesection
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:;" target="_blank" class="nav-link">
+                                        <i class="icon-globe"></i> Arrow Toggle
+                                        <span class="arrow nav-toggle"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-tag"></i> Sample Link 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-pencil"></i> Sample Link 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="icon-graph"></i> Sample Link 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="icon-bar-chart"></i> Item 3 </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+@endsection
