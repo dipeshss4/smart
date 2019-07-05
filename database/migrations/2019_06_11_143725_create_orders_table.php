@@ -14,7 +14,7 @@ class CreateOrdersTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('billno');
             $table->string('date_time');
             $table->double('gross_amount');
@@ -23,12 +23,12 @@ class CreateOrdersTable extends Migration
             $table->double('vat_charge_amount');
             $table->double('discount');
             $table->double('net_amount');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('users_id')->unsigned();
+            $table->foreign('users_id')->references('id')->on('users');
             $table->integer('table_id')->unsigned();
             $table->foreign('table_id')->references('id')->on('tables');
             $table->integer('store_id')->unsigned();
-            $table->foreign('store_id')->references('id')->on('store');
+            $table->foreign('store_id')->references('id')->on('stores');
             $table->boolean('paid_status')->default(0);
 
 

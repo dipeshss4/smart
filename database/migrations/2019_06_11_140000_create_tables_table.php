@@ -14,7 +14,7 @@ class CreateTablesTable extends Migration
     public function up()
     {
         Schema::create('tables', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('table_name');
             $table->integer('capacity');
             $table->boolean('status')->default(0);
